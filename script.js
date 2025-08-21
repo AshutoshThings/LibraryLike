@@ -1,6 +1,7 @@
 const myLib = [];
 
 function book(name, author, length, read){
+    this.id = crypto.randomUUID();
     this.name = name;
     this.author = author;
     this.length = length;

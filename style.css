@@ -1,5 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Mozilla+Headline:wght@200..700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(51, 51, 51);
+    transition: transform 0.2s ease-out;
+    will-change: transform;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px 0;;
+}
+.underline{
+    width: 98%;
+    border: 1px solid #8b8b8b;
+    margin : 0 auto;
+}
+.header .leftSection a img{
+    margin-left: 10px;
+    width: 4%;
+}
+.header .leftSection span{
+    font-size: 32px;
+    color : rgb(207, 207, 207);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    padding: 10px;
+    margin : 0 auto;    
+}
+.header .rightSection a{
+    text-decoration: none;
+    margin : 0 15px;
+    color : white;
+}
+.content1{
+    margin : 70px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.content1 .leftSection{
+    margin-left: 7%;
+    display: flex;
+    flex-direction: column;
+    width: 75%; 
+    flex: 1;
+}
+.content1 .leftSection .whatIsThis{
+    font-family: "Mozilla Headline", sans-serif;
+    font-size: 55px;
+    color: white;
+    padding-left: 60px; 
+}
+.content1 .leftSection .description{
+    width:70%;
+    font-family: "Raleway", sans-serif;
+    font-size: 22px;
+    color : white;
+    padding:0 60px; 
+    margin-top: 10px;
+}
+.content1 .leftSection .logoOfBook{
+    padding: 0 60px;
+    margin-top: 50px;
+}
+.content1 .leftSection .logoOfBook a img{
+    width: 8%;
+}
+.content1 .rightSection{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .content1 .rightSection img {
+    width: 65%;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: rgba(161, 161, 161, 0.25) 0px 54px 55px, rgba(204, 204, 204, 0.12) 0px -12px 30px, rgba(207, 207, 207, 0.12) 0px 4px 6px, rgba(216, 216, 216, 0.17) 0px 12px 13px, rgba(209, 209, 209, 0.09) 0px -3px 5px;
+
+}
+.content1End .underline{
+    display: block;
+    width: 90%;
+    border: 1px solid #8b8b8b;
+    margin : 0 auto;
+}
+
+.content2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 90%; */
+}
+.content2 .upperPart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin : 0 auto;
+    padding: 20px;
+}
+.content2 .upperPart .leftSection{
+    width: 10%;
+    color : white;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+}
+.content2 .upperPart .rightSection{
+    display: flex;
+    width: 80%;
+}
+.content2 .upperPart .rightSection .benefits{
+    width: 4%;
+    margin : 0 auto;
+}
+.content2 .upperPart .rightSection .benefits img{
+    width: 100%;
+} 
+.content2End{
+    width: 100%;
+}
+.content2End .underline{
+    display: block;
+    width: 90%;
+    border: 1px solid #8b8b8b;
+    margin : 0 auto;
+}
+.content3{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    margin : 20px;
+}
+.content3 .leftSection{
+    width: 20%;
+    color : white;
+    text-align: left;
+    font-family: "Quicksand", sans-serif;
+}
+.content3 .verticalLine{
+    height: auto;
+    border:1px solid white;
+}
+.content3 .rightSection{
+    margin-right: 0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.content3 .rightSection .topSection{
+    display: flex;
+    margin : 5px;
+}
+.content3 .rightSection .bottomSection{
+    display: flex;
+    margin : 5px;
+}
+.content3 .horizontalLine{
+    height: auto;
+    border:1px solid white;
+    margin : 15px 30px 15px 15px;
+}
+.content3 .rightSection .work{
+    color : white;
+    width: 50%;
+    margin : 10px;
+    padding : 20px;
+    display: flex;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+}
+.content3 .rightSection .work .workImage{
+    width: 20%;
+    padding: 20px;
+}
+.content3 .rightSection .work img{
+    width: 100%;
+}
+.content3 .rightSection .work .workDetails{
+    width: 70%;
+}
+.content3End .underline{
+    display: block;
+    width: 90%;
+    border: 1px solid #8b8b8b;
+    margin : 0 auto;
+}
+.content4 .content4Heading{
+    font-size: 32px;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    padding: 20px;
+    color : white;
+}
+.content4{
+    width: 100%;
+    margin : 30px 0;
+}
+.content4 .cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+.content4 .cardContainer .card{
+    width: 20%;
+    height: 400px;
+    border : 3px solid #939393;
+    padding: 5px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+}
+.content4 .cardContainer .card img{
+    width: 100%;;
+}
+.content4 .cardContainer .card1{
+    background-image: url("images/animalFarm.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content4 .cardContainer .card2{
+    background-image: url("images/metamorphosis.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.content4 .cardContainer .card3{
+    background-image: url("images/TheAlchemist.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content4 .cardContainer .card4{
+    background-image: url("images/TuesdaysWithMorrie.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content4 .cardContainer .card5{
+    background-image: url("images/VictorFrankl.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content4 .cardContainer .card6{
+    background-image: url("images/anneFrank.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content4 .cardContainer .card1:hover{
+    transition: 0.7s ease-in-out;
+    border: 3px solid green;
+    box-shadow: rgba(202, 202, 202, 0.1) 0px 1px 1px 0px inset, rgba(175, 175, 219, 0.25) 0px 50px 100px -20px, rgba(236, 236, 236, 0.3) 0px 30px 60px -30px;
+}
+.content4 .cardContainer .card2:hover{
+    transition: 0.7s ease-in-out;
+    border: 3px solid rgb(235, 80, 8);
+    box-shadow: rgba(202, 5, 5, 0.1) 0px 1px 1px 0px inset, rgba(175, 175, 219, 0.25) 0px 50px 100px -20px, rgba(236, 236, 236, 0.3) 0px 30px 60px -30px;
+}
+.content4 .cardContainer .card3:hover{
+    transition: 0.7s ease-in-out;
+    border: 3px solid rgb(160, 97, 4);
+    box-shadow: rgba(202, 202, 202, 0.1) 0px 1px 1px 0px inset, rgba(175, 175, 219, 0.25) 0px 50px 100px -20px, rgba(236, 236, 236, 0.3) 0px 30px 60px -30px;
+}
+.content4 .cardContainer .card4:hover{
+    transition: 0.7s ease-in-out;
+    border: 3px solid rgb(150, 146, 92);
+    box-shadow: rgba(202, 202, 202, 0.1) 0px 1px 1px 0px inset, rgba(175, 175, 219, 0.25) 0px 50px 100px -20px, rgba(236, 236, 236, 0.3) 0px 30px 60px -30px;
+}
+.content4 .cardContainer .card5:hover{
+    transition: 0.7s ease-in-out;
+    border: 3px solid rgb(36, 19, 33);
+    box-shadow: rgba(202, 202, 202, 0.1) 0px 1px 1px 0px inset, rgba(175, 175, 219, 0.25) 0px 50px 100px -20px, rgba(236, 236, 236, 0.3) 0px 30px 60px -30px;
+}
+.content4 .cardContainer .card6:hover{
+    transition: 0.7s ease-in-out;
+    border: 3px solid rgb(218, 218, 218);
+    box-shadow: rgba(202, 202, 202, 0.1) 0px 1px 1px 0px inset, rgba(175, 175, 219, 0.25) 0px 50px 100px -20px, rgba(236, 236, 236, 0.3) 0px 30px 60px -30px;
+}
+.footer{
+    width: 100%;
+    background : black;
+    color : white;
+    height: 30vh;
 }
