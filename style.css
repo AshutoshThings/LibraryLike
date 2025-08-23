@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Mozilla+Headline:wght@200..700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Mozilla+Headline:wght@200..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: rgb(51, 51, 51);
-    transition: transform 0.2s ease-out;
-    will-change: transform;
+    box-sizing: border-box;  
 }
-
+body{
+background-color: rgb(51, 51, 51);
+}
 .header{
     display: flex;
     flex-direction: column;
@@ -212,92 +211,106 @@
     align-items: center;
     justify-self: center;
     justify-content: center;
-    width: 100%;
-    
+    width: 100%; 
 }
 .content4 .cardContainer .card{
     width: 20%;
     height: 400px;
-    border : 3px solid #939393;
+    border : 1px solid transparent;
     padding: 5px;
     margin: 20px;
     display: flex;
     align-items: center;
-    border-radius: 30px;
-}
-.content4 .cardContainer .card img{
-    width: 100%;;
-}
-.content4 .cardContainer .card1{
-    background-image: url("images/animalFarm.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+.content4 .cardContainer .card img{
+    width: 100%;
+}
+.content4 .cardContainer .card1{
+    background-image: url("images/animalFarm.jpg");    
 }
 .content4 .cardContainer .card2{
     background-image: url("images/metamorphosis.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
 }
 .content4 .cardContainer .card3{
     background-image: url("images/TheAlchemist.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 .content4 .cardContainer .card4{
     background-image: url("images/TuesdaysWithMorrie.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 .content4 .cardContainer .card5{
     background-image: url("images/VictorFrankl.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 .content4 .cardContainer .card6{
     background-image: url("images/anneFrank.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
-.content4 .cardContainer .card1:hover{
-    transition: 0.7s ease-in-out;
-    border: 3px solid green;
-    box-shadow: rgba(202, 202, 202, 0.1) 0px 1px 1px 0px inset, rgba(175, 175, 219, 0.25) 0px 50px 100px -20px, rgba(236, 236, 236, 0.3) 0px 30px 60px -30px;
+.content4 .cardContainer .card:hover{
+    border: 3px solid #ffffff;
+    box-shadow: rgba(202, 5, 5, 0.1) 0px 1px 1px 0px inset, rgba(175, 175, 219, 0.25) 0px 50px 100px -20px, rgba(236, 236, 236, 0.3) 0px 30px 60px -30px inset;
 }
-.content4 .cardContainer .card2:hover{
-    transition: 0.7s ease-in-out;
-    border: 3px solid rgb(235, 80, 8);
-    box-shadow: rgba(202, 5, 5, 0.1) 0px 1px 1px 0px inset, rgba(175, 175, 219, 0.25) 0px 50px 100px -20px, rgba(236, 236, 236, 0.3) 0px 30px 60px -30px;
-}
-.content4 .cardContainer .card3:hover{
-    transition: 0.7s ease-in-out;
-    border: 3px solid rgb(160, 97, 4);
-    box-shadow: rgba(202, 202, 202, 0.1) 0px 1px 1px 0px inset, rgba(175, 175, 219, 0.25) 0px 50px 100px -20px, rgba(236, 236, 236, 0.3) 0px 30px 60px -30px;
-}
-.content4 .cardContainer .card4:hover{
-    transition: 0.7s ease-in-out;
-    border: 3px solid rgb(150, 146, 92);
-    box-shadow: rgba(202, 202, 202, 0.1) 0px 1px 1px 0px inset, rgba(175, 175, 219, 0.25) 0px 50px 100px -20px, rgba(236, 236, 236, 0.3) 0px 30px 60px -30px;
-}
-.content4 .cardContainer .card5:hover{
-    transition: 0.7s ease-in-out;
-    border: 3px solid rgb(36, 19, 33);
-    box-shadow: rgba(202, 202, 202, 0.1) 0px 1px 1px 0px inset, rgba(175, 175, 219, 0.25) 0px 50px 100px -20px, rgba(236, 236, 236, 0.3) 0px 30px 60px -30px;
-}
-.content4 .cardContainer .card6:hover{
-    transition: 0.7s ease-in-out;
-    border: 3px solid rgb(218, 218, 218);
-    box-shadow: rgba(202, 202, 202, 0.1) 0px 1px 1px 0px inset, rgba(175, 175, 219, 0.25) 0px 50px 100px -20px, rgba(236, 236, 236, 0.3) 0px 30px 60px -30px;
+.content4End .underline{
+    display: block;
+    width: 98%;
+    border: 1px solid #8b8b8b;
+    margin : 0 auto;
 }
 .footer{
-    width: 100%;
-    background : black;
+    width: 98%;
+    margin: 0 auto;
     color : white;
-    height: 30vh;
+    background: linear-gradient(to right, #000000, #4a4a4a, #333333);
+    box-shadow: rgb(255 255 255 / 15%) 0px 3px 10px;
+    border-bottom:5px solid #8b8b8b;
+    margin-bottom: 10px;;
+}
+.footer .topContent{
+    display: flex;
+    align-items: center;
+}
+.footer .topContent .contactusIcon{
+    width: 5%;
+    display: flex;
+    justify-content: flex-start;
+}
+.footer .topContent span img{
+    margin : 10px;
+    width: 30%;
+}
+.footer .topContent .footerContactUs{
+    margin-left: -20px;
+    font-size: 12px;
+    font-family: "Quicksand", sans-serif;
+}
+
+.footer .footerContent2{
+    padding: 10px;
+    width : 60%;
+    font-size: 42px;
+    font-family: "Mozilla Headline", sans-serif;
+}
+.footer .footerContent3{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.footer .footerContent3 .Ficon img{
+    width: 10%
+}
+.footer .footerContent3 .ProjectName{
+    font-size: 160px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+.footer .footerContent4{
+    margin-top: 30px;
+    display: flex;
+    margin : 10px;
+    justify-content: space-between;
+    font-size: 10px;
+    font-family: "Quicksand", sans-serif;
+    padding-bottom: 10px;
+}
+.footer .footerContent4 .FrightSection span{
+    margin : 0 10px;
 }
