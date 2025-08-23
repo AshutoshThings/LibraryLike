@@ -7,9 +7,16 @@
 body{
 background-color: rgb(51, 51, 51);
 }
-.header{
+.header {
     display: flex;
     flex-direction: column;
+    position: sticky;
+    top: 0;
+    background: rgba(51, 51, 51, 0.4); 
+    backdrop-filter: blur(10px);       
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+    z-index: 1000;
 }
 .top{
     display: flex;
@@ -19,7 +26,7 @@ background-color: rgb(51, 51, 51);
     margin: 5px 0;;
 }
 .underline{
-    width: 98%;
+    width: 100%;
     border: 1px solid #8b8b8b;
     margin : 0 auto;
 }
@@ -252,18 +259,17 @@ background-color: rgb(51, 51, 51);
 }
 .content4End .underline{
     display: block;
-    width: 98%;
+    width: 100%;
     border: 1px solid #8b8b8b;
     margin : 0 auto;
-}
+} 
 .footer{
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
     color : white;
-    background: linear-gradient(to right, #000000, #4a4a4a, #333333);
-    box-shadow: rgb(255 255 255 / 15%) 0px 3px 10px;
-    border-bottom:5px solid #8b8b8b;
-    margin-bottom: 10px;;
+    background: linear-gradient(to bottom, #333333, #1c1c1c, #000000);
+    box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.15);
+    border-bottom:8px solid #8b8b8b;
 }
 .footer .topContent{
     display: flex;
@@ -275,24 +281,27 @@ background-color: rgb(51, 51, 51);
     justify-content: flex-start;
 }
 .footer .topContent span img{
-    margin : 10px;
+    margin-left : 3rem;
+    margin-top: 3rem;
     width: 30%;
 }
 .footer .topContent .footerContactUs{
-    margin-left: -20px;
+    margin-left: 5px;
+    margin-top: 3rem;
     font-size: 12px;
     font-family: "Quicksand", sans-serif;
 }
 
 .footer .footerContent2{
-    padding: 10px;
-    width : 60%;
+    margin-left : 3rem;
+    margin-top : 1rem;
+    width : 50%;
     font-size: 42px;
     font-family: "Mozilla Headline", sans-serif;
 }
 .footer .footerContent3{
     margin-top: 50px;
-    margin-left: 10px;
+    margin : 3rem;
 }
 .footer .footerContent3 .Ficon img{
     width: 10%
