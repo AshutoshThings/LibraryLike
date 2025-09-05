@@ -111,18 +111,37 @@
     <div class="content4">
         <div class="content4Heading">Recent Reads</div>
         <div class="cardContainer">
-            <div class="card card1"></div>
-            <div class="card card2"></div>
-            <div class="card card3"></div>
-            <div class="card card4"></div>
-            <div class="card card5"></div>
-            <div class="card card6"></div>
-            <div class="card7"><button class="addBook" type="button">Add New</button></div>
+            <div class="card7">
+                <button id="addBookBtn">Add Book</button>
+            <div id="formPopup" class="form-popup">
+            <div class="form-content">
+                <h2>Add a Book</h2>
+                <form id="bookForm">
+                <label>Book Name</label>
+                <input type="text" id="bookName" required>
+
+                <label>Author</label>
+                <input type="text" id="bookAuthor" required>
+
+                <label>Length</label>
+                <input type="number" id="bookLength" required>
+
+                <label>Read</label>
+                <select id="bookRead">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                <div class="form-actions">
+                    <button type="submit">Add</button>
+                    <button type="button" id="closeForm">Cancel</button>
+                </div>
+                </form>
+            </div>
+            </div>
+
+            </div>
         </div>
     </div>
-    <div class="content4End">
-            <span class="underline"></span>
-        </div>
     <div class="footer">
         <div class="topContent">
             <span class="contactusIcon">
@@ -147,5 +166,6 @@
             </div>
         </div>
     </div>
+    
 </body>
 </html>
